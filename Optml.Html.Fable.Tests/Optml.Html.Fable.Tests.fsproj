@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../Optml.Html.Tests/Testing.Fable.fs" />
+    <Compile Include="../Optml.Html.Tests/Example.fs" />
+    <Compile Include="../Optml.Html.Tests/Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Optml.Html.Fable/Optml.Html.Fable.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fable.Mocha" Version="2.11.0" />
+  </ItemGroup>
+
+</Project>
